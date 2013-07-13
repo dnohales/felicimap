@@ -1,0 +1,2 @@
+module HappyMomentsHelper
+end

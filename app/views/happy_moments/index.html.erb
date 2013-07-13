@@ -1,0 +1,27 @@
+<h1>Listing happy_moments</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Lat</th>
+    <th>Lon</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @happy_moments.each do |happy_moment| %>
+  <tr>
+    <td><%= happy_moment.content %></td>
+    <td><%= happy_moment.lat %></td>
+    <td><%= happy_moment.lon %></td>
+    <td><%= link_to 'Show', happy_moment %></td>
+    <td><%= link_to 'Edit', edit_happy_moment_path(happy_moment) %></td>
+    <td><%= link_to 'Destroy', happy_moment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Happy moment', new_happy_moment_path %>

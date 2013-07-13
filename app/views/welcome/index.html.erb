@@ -1,0 +1,29 @@
+<div class="small-4 large-4 columns" id="happy_form">
+	<%= form_for(@happy_moment) do |f| %>
+		<%= f.hidden_field :lon, :id => "happy_lon"  %>
+		<%= f.hidden_field :lat, :id => "happy_lat"  %>
+		<%= f.text_field :content, :id => "happy_content", :placeholder=>"Describí tu momento feliz" %>
+
+		<div class="actions">
+		    <%= f.submit "Ping!", :class=>"button" %>
+		</div>
+	<% end %>
+</div>
+
+<script type="text/javascript">
+	
+	var h_moments =[
+	<% @happy_moments.each do |happy_moment| %>
+		["<%= happy_moment.content %>","<%= happy_moment.lat %>","<%= happy_moment.lon %>"],
+	<% end %>
+	]
+</script>
+
+
+<div id="map_container">
+	
+	<div id="map">
+		
+	</div>
+
+</div>

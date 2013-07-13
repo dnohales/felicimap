@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+ *= require_tree .
+ */
+
+
+#map{
+	height: 540px;
+	width: 100%;
+}
+
+#map_container{
+	height: 540px;
+	width: 100%;
+}
+
+.top-bar{
+	margin-bottom: 5px !important;
+}
+
+div#map div{
+        line-height: initial !important;
+        box-sizing: initial !important;
+}
+
+#map-container #map{
+        display: block!important;
+}
+
+#map-container, #map, img{
+        max-width: none !important;
+        
+}
+
+#map-container{
+        width: 100%!important;
+        height: 100%!important;
+        min-height: 100%!important;
+        min-width: 100%!important;
+}
+
+#happy_form{position: absolute; top: 10px; left: 10px; z-index: 99;} 
+#new_happy_moment{background-color: #FFF !important; padding:10px !important;}
+#new_happy_moment div{margin: 0px;}
+
+#infowindow{
+        width: 250px;
+
+}
+
+div#map div{
+        line-height: initial !important;
+        box-sizing: initial !important;
+        -moz-box-sizing: initial !important; 
+}

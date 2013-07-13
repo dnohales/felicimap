@@ -1,0 +1,29 @@
+<%= form_for(@happy_moment) do |f| %>
+  <% if @happy_moment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@happy_moment.errors.count, "error") %> prohibited this happy_moment from being saved:</h2>
+
+      <ul>
+      <% @happy_moment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :lon %><br />
+    <%= f.text_field :lon %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
