@@ -6,7 +6,22 @@ user_data,
 tmarker;
 
 $(document).ready(function(){
+  if (localStorage.getItem('visited') == undefined)
+    $('#myModal').modal();
+ 
+  $(document.body).click(function(){
+     $('#myModal').modal('hide');
+     localStorage["visited"] = true;
+    
+  });
+
+  $('.link-proyecto').click(function(e){
+     e.preventDefault();
+     $('#myModalProyecto').modal();
+  });
+
   locate(null);
+  
   $('input').change(function() {
     updateMarkerContent();
     infowindow.open(map, marker);
@@ -72,7 +87,8 @@ function loadMarkers(){
       tmarker = new google.maps.Marker({
         position: new google.maps.LatLng(parseFloat(h_moments[i][1]),parseFloat(h_moments[i][2])),
         map: map,
-        animation: google.maps.Animation.DROP
+        animation: google.maps.Animation.DROP,
+        icon: "/assets/pin.png"
       });
 
       google.maps.event.addListener(tmarker, 'click', (function(tmarker, i) {
@@ -134,7 +150,8 @@ function placeMarker(location) {
       position: location,
       map: map,
       animation: google.maps.Animation.DROP,
-      draggable: true
+      draggable: true,
+      icon:"assets/pin2.png"
     });
     addListeners(marker);
   }

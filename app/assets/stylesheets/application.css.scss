@@ -24,9 +24,6 @@
 	width: 100%;
 }
 
-.top-bar{
-	margin-bottom: 5px !important;
-}
 
 div#map div{
         line-height: initial !important;
@@ -49,9 +46,18 @@ div#map div{
         min-width: 100%!important;
 }
 
-#happy_form{position: absolute; top: 10px; left: 10px; z-index: 99;} 
-#new_happy_moment{background-color: #FFF !important; padding:10px !important;}
+#happy_form{position: absolute; top: 10px; left: 10px; z-index: 99; width:350px !important;} 
+#happy_form input{ height: 50px !important;}
+#new_happy_moment{background-color: #FFF !important; padding:10px !important;  height: 130px !important;}
 #new_happy_moment div{margin: 0px;}
+
+.button-pin{
+        margin-right: 0px !important;
+        margin-left: auto !important;
+        margin-bottom: 0px !important;
+}
+
+
 
 #infowindow{
         width: 250px;
@@ -62,4 +68,101 @@ div#map div{
         line-height: initial !important;
         box-sizing: initial !important;
         -moz-box-sizing: initial !important; 
+}
+
+#myModal .modal-body{
+        overflow:hidden !important;
+        font-family: 'Montserrat', sans-serif !important; 
+        width:795px;     
+}
+
+#myModal.modal{
+        background:none !important;
+        border:0px !important;
+        box-shadow:none !important;
+        margin-left:-370px !important;
+}
+
+#myModalProyecto .modal-body {
+        padding: 50px;
+        text-align:center !important; 
+}
+
+#myModalProyecto .modal-body p{
+        text-align:left !important; 
+}
+
+#myModalProyecto.modal-body p{
+        overflow:hidden !important;
+        font-family: 'Montserrat', sans-serif !important; 
+        font-size: 14px !important;  
+
+}
+
+
+.column, .columns{
+        padding : 0 0 0 0 !important;
+}
+.top-bar{
+        margin-bottom: 0px !important;
+        background:#fff !important;
+        height:65px !important;
+        border-bottom:2px solid #f5f5f5;
+        padding: 7px 30px 0px 35px !important; 
+}
+
+.top-bar-section ul li > a{
+        font-family: 'Montserrat', sans-serif !important; 
+        color:#888 !important;
+        font-weight:normal !important;
+}
+
+.top-bar-section ul{
+        background:#fff !important;
+        
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+        height: auto !important;
+        background-color: #CCC !important;
+}
+
+.ffooter     {
+        padding: 20px 35px 10px 35px !important;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(196, 0, 122, 1);
+        font-family: 'Montserrat', sans-serif !important; 
+        font-size: 18px !important;
+        font-weight: bold !important;
+        overflow: hidden;
+}
+
+
+.ffooter div     {
+
+        font-size: 18px !important;
+        font-weight: bold !important;
+        color: #FFF;
+}
+
+.yellow{
+        color: rgba(255, 237, 0 ,1) !important;
+}
+
+.actions{
+        overflow: hidden !important;
+        height: 100px;
+}
+
+button, .button{
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 30px !important;
+        background : none !important;
+        height: 100px !important;
+        padding: 0px !important;
+}
+
+BODY{
+        background-color: rgba(196, 0, 122, 1) !important;
 }

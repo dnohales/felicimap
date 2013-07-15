@@ -1,12 +1,14 @@
+
+
 <div class="small-4 large-4 columns" id="happy_form">
 	<%= form_for(@happy_moment) do |f| %>
 		<%= f.hidden_field :lon, :id => "happy_lon"  %>
 		<%= f.hidden_field :lat, :id => "happy_lat"  %>
-		<%= f.text_field :content, :id => "happy_content", :placeholder=>"Describí tu momento feliz" %>
+		<%= f.text_field :content, :id => "happy_content", :placeholder=>"escribe tu momento feliz" %>
 
-		<div class="actions">
-		    <%= f.submit "Ping!", :class=>"button" %>
-		</div>
+		<div class="actions" text-align="right">
+		    <%= f.submit "pin", :class=>"button button-pin right", :style=>"height: 100px;" %>
+		</div> 
 	<% end %>
 </div>
 
@@ -27,3 +29,35 @@
 	</div>
 
 </div>
+
+
+ <!-- Footer -->
+ <div class="ffooter">
+ 	<div class="left"><%= @happy_moments.length %> momentos felices</div>
+	
+	<div class="right yellow">
+		#felicimap
+	</div>
+
+ </div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-body">
+		<img src="/assets/ilustracion-inicio2.png"/>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div id="myModalProyecto" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-body">
+		<p>Felicimap es un proyecto que nace con la iniciativa de identificar en el mapa de la ciudad los lugares donde las personas experimentan o experimentaron un momento de felicidad. De esta forma se pueden descubrir otros lugares dentro de la ciudad.</p>
+		<p>
+		Es fácil y práctico, con sólo tres pasos puedes marcar tu momento de felicidad y compartirlo con el mundo porque todo momento feliz necesita ser recordado.</p>
+		<img src="/assets/team.jpg"  style="width:200px; margin: 0 auto !important;">
+
+	</div>
+</div>2

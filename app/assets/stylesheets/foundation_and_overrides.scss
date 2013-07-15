@@ -1270,4 +1270,13 @@ $default-float: left;
 
 // $topbar-sticky-class: ".sticky";
 
+$topbar-bg: #fff;
+
+$topbar-link-color: #000;
+$topbar-link-color-hover: #000;
+$topbar-link-color-active: #000;
+
+$button-font-color: rgba(196, 0, 122, 1);
+$button-border-width: 0px;
+
 @import 'foundation';

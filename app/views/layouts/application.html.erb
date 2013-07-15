@@ -13,14 +13,20 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= "felicimap" %></title>
 
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDm8v8o18ZBx7TC3GyivzSzaAih881us8g&sensor=true"></script>
 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<link text="type/css" href="/assets/bootstrap.css"/>
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr", "jquery","map" %>
     <%= csrf_meta_tags %>
+
+
+    <script type="text/javascript" src="/assets/bootstrap.min.js"></script>
   </head>
 
   <body>
